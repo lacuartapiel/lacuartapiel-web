@@ -200,6 +200,6 @@ iframe { max-width: 100%; border: 0; }
   .site-nav-mobile .menu a { color: #000; }
   .bio-marker { position: static; width: 100%; padding: 0 0 1rem; }
   .caras-tira { display: none !important; }
-  .caras-filas { display: block; margin: .4rem 0 .2rem; }
+  .caras-filas { display: block; width: 90%; margin: .4rem auto .2rem; }
   .caras-filas img { display: block; width: 100%; height: auto; margin-bottom: .9rem; }
 }
