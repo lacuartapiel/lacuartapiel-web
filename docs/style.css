@@ -40,7 +40,7 @@ body {
   background: #fff;
   color: #000;
   font-family: var(--sans);
-  font-size-adjust: 0.47;
+  font-size-adjust: 0.45;
 }
 img { max-width: 100%; height: auto; display: block; border: 0; }
 a { color: inherit; text-decoration: none; }
@@ -167,14 +167,15 @@ iframe { max-width: 100%; border: 0; }
 .bio-marker svg { width: 100%; height: auto; display: block; }
 
 /* bio: caras dibujadas */
-.caras-filas { display: none; }
+.caras-filas { display: block; width: 100%; margin: .6rem 0 .2rem; }
+.caras-filas img { display: block; width: 100%; height: auto; margin-bottom: 1rem; }
 
 /* ---- visibilidad ordenador / móvil ---- */
 .only-mobile { display: none !important; }
 
 @media (max-width: 768px) {
   html { font-size: 81.25%; }
-  body { font-size-adjust: 0.5; }
+  body { font-size-adjust: 0.47; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block !important; }
   .page, .pin { width: 100% !important; margin: 0 !important; }
@@ -210,7 +211,6 @@ iframe { max-width: 100%; border: 0; }
   .site-nav-mobile .menu [grid-col] { padding: 0; width: auto !important; }
   .site-nav-mobile .menu a { color: #000; }
   .bio-marker { position: static; width: 100%; padding: 0 0 1rem; }
-  .caras-tira { display: none !important; }
-  .caras-filas { display: block; width: 90%; margin: .4rem auto .2rem; }
-  .caras-filas img { display: block; width: 100%; height: auto; margin-bottom: .9rem; }
+  .caras-filas { width: 90%; margin: .4rem auto .2rem; }
+  .caras-filas img { margin-bottom: .8rem; }
 }
