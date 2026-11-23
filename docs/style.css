@@ -66,6 +66,9 @@ iframe { max-width: 100%; border: 0; }
   font-size: 1.2rem; line-height: 1.2; margin: 0; color: var(--ink);
 }
 .site-nav .logo, .site-nav-mobile .logo, .content h4 a { font-size-adjust: none; }
+/* textos de proyectos y bio, un punto más pequeños */
+.project main .content, .project .pin .content, .bio main .content { font-size-adjust: 0.415; }
+.project .pin-fixed .content h1 { font-size: 1.08rem; }
 .content h3, .content h5 { font-family: var(--logo); font-weight: 400; margin: 0; color: var(--ink); }
 .content h4 {
   font-family: var(--sans); font-weight: 800;
@@ -176,6 +179,7 @@ iframe { max-width: 100%; border: 0; }
 @media (max-width: 768px) {
   html { font-size: 81.25%; }
   body { font-size-adjust: 0.47; }
+  .project main .content, .project .pin .content, .bio main .content { font-size-adjust: 0.44; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block !important; }
   .page, .pin { width: 100% !important; margin: 0 !important; }
